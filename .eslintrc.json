@@ -1,0 +1,50 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "plugins": [
+    "jest"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:jest/all",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "jest/prefer-expect-assertions": "off",
+    "jest/require-top-level-describe": "off",
+    "jest/consistent-test-it": "off"
+  }
+}
