@@ -2,11 +2,8 @@
   "name": "@selrond/knit",
   "version": "0.1.0",
   "description": "Insert an item between array elements",
-  "source": "index.js",
-  "main": "dist/index.js",
-  "exports": "./dist/index.modern.js",
-  "module": "dist/index.module.js",
-  "unpkg": "dist/index.umd.js",
+  "source": "src/index.js",
+  "main": "dist",
   "files": [
     "dist",
     "src"
@@ -15,8 +12,10 @@
     "dev": "microbundle watch",
     "lint": "eslint --fix --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "microbundle",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
   },
   "repository": {
     "type": "git",

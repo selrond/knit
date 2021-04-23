@@ -16,7 +16,6 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "arrow-body-style": "off",
     "no-console": [
       "warn",
       {
@@ -37,12 +36,6 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ],
     "jest/prefer-expect-assertions": "off",
     "jest/require-top-level-describe": "off",
     "jest/consistent-test-it": "off"
