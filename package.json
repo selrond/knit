@@ -1,6 +1,6 @@
 {
   "name": "@selrond/knit",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Insert an item between array elements",
   "source": "src/index.js",
   "main": "dist/knit.js",
