@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Insert an item between array elements",
   "source": "src/index.js",
-  "main": "dist",
+  "main": "dist/knit.js",
   "files": [
     "dist",
     "src"
