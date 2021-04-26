@@ -2,8 +2,18 @@
   "name": "@selrond/knit",
   "version": "0.2.2",
   "description": "Insert an item between array elements",
-  "source": "src/index.js",
+  "homepage": "https://github.com/selrond/knit#readme",
+  "bugs": {
+    "url": "https://github.com/selrond/knit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selrond/knit.git"
+  },
+  "license": "MIT",
+  "author": "Sebastian Andil <sebastian.andil@gmail.com> (https://sebastianandil.com/)",
   "main": "dist/knit.js",
+  "source": "src/index.js",
   "files": [
     "dist",
     "src"
@@ -17,16 +27,9 @@
     "prepare": "husky install",
     "prepublishOnly": "npm run lint && npm run test && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/selrond/knit.git"
+  "lint-staged": {
+    "*.js": "eslint --fix --quiet"
   },
-  "author": "Sebastian Andil <sebastian.andil@gmail.com> (https://sebastianandil.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/selrond/knit/issues"
-  },
-  "homepage": "https://github.com/selrond/knit#readme",
   "dependencies": {
     "type-detect": "^4.0.8"
   },
@@ -47,8 +50,5 @@
     "microbundle": "^0.13.0",
     "np": "^7.5.0",
     "prettier": "2.2.1"
-  },
-  "lint-staged": {
-    "*.js": "eslint --fix --quiet"
   }
 }
