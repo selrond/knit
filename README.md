@@ -1,5 +1,7 @@
 # knit
 
+Insert an item between array elements
+
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@selrond/knit?style=flat-square)
 ![NPM](https://img.shields.io/npm/l/@selrond/knit?style=flat-square)
 
