@@ -5,7 +5,7 @@ function knit(arg, item) {
     throw TypeError(`I can't knit with ${type(arg)}`)
   }
   if (!arg.length) {
-    throw TypeError(`I can't knit with an empty array!`)
+    return []
   }
   if (arg.length === 1) return arg
 
