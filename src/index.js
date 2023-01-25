@@ -4,10 +4,9 @@ function knit(arg, item) {
   if (!Array.isArray(arg)) {
     throw TypeError(`I can't knit with ${type(arg)}`)
   }
-  if (!arg.length) {
-    throw TypeError(`I can't knit with an empty array!`)
+  if (arg.length <= 1) {
+    return arg
   }
-  if (arg.length === 1) return arg
 
   const knittedItems = arg.reduce(
     (acc, element, index, array) => [
